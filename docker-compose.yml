@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  hellokaws:
+    image: tadeuwohlers/hellowkaws
+    container_name: hellokaws
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
